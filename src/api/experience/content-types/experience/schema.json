@@ -58,11 +58,6 @@
       "relation": "oneToMany",
       "target": "api::faq.faq"
     },
-    "images": {
-      "type": "component",
-      "repeatable": true,
-      "component": "common.images"
-    },
     "extras": {
       "type": "component",
       "repeatable": true,
@@ -81,6 +76,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::voucher-template.voucher-template"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

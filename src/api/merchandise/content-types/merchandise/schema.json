@@ -46,11 +46,6 @@
       "relation": "oneToOne",
       "target": "api::terms-and-condition.terms-and-condition"
     },
-    "images": {
-      "type": "component",
-      "repeatable": true,
-      "component": "common.images"
-    },
     "options": {
       "type": "component",
       "repeatable": false,
@@ -60,6 +55,16 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

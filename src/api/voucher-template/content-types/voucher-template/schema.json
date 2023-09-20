@@ -4,7 +4,8 @@
   "info": {
     "singularName": "voucher-template",
     "pluralName": "voucher-templates",
-    "displayName": "VoucherTemplate"
+    "displayName": "VoucherTemplate",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,9 +19,14 @@
       "type": "string"
     },
     "image": {
-      "type": "component",
-      "repeatable": false,
-      "component": "common.images"
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

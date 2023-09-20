@@ -29,13 +29,18 @@
     "description": {
       "type": "text"
     },
-    "image": {
-      "type": "component",
-      "repeatable": false,
-      "component": "common.images"
-    },
     "googleMapsLink": {
       "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

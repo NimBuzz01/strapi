@@ -28,11 +28,6 @@
       "relation": "oneToOne",
       "target": "api::location.location"
     },
-    "images": {
-      "type": "component",
-      "repeatable": true,
-      "component": "common.images"
-    },
     "included": {
       "type": "richtext"
     },
@@ -73,11 +68,15 @@
       "relation": "oneToOne",
       "target": "api::terms-and-condition.terms-and-condition"
     },
-    "event_registrations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::event-registration.event-registration",
-      "mappedBy": "event"
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

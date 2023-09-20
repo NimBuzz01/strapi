@@ -38,15 +38,20 @@
       "repeatable": false,
       "component": "experience.rates"
     },
-    "image": {
-      "type": "component",
-      "repeatable": false,
-      "component": "common.images"
-    },
     "location": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::location.location"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
