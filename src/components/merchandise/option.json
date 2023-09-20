@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_merchandise_option",
+  "info": {
+    "displayName": "option",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "optionId": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "cost": {
+      "type": "component",
+      "repeatable": false,
+      "component": "experience.rates"
+    }
+  }
+}

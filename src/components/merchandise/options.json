@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_merchandise_options",
+  "info": {
+    "displayName": "options",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "color",
+        "size"
+      ]
+    },
+    "options": {
+      "displayName": "option",
+      "type": "component",
+      "repeatable": true,
+      "component": "merchandise.option"
+    }
+  }
+}

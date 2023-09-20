@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eventId": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "experience.duration"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.images"
+    },
+    "included": {
+      "type": "richtext"
+    },
+    "otherInfo": {
+      "type": "richtext"
+    },
+    "cost": {
+      "type": "component",
+      "repeatable": false,
+      "component": "experience.rates"
+    },
+    "groupSize": {
+      "type": "integer"
+    },
+    "requirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "experience.requirements"
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "experience.about"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq"
+    },
+    "terms_and_condition": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::terms-and-condition.terms-and-condition"
+    },
+    "event_registrations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event-registration.event-registration",
+      "mappedBy": "event"
+    }
+  }
+}
