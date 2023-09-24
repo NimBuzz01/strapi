@@ -32,6 +32,16 @@
     },
     "expiryDate": {
       "type": "date"
+    },
+    "cashAmount": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "LKR",
+        "USD"
+      ]
     }
   }
 }
