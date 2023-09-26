@@ -17,21 +17,31 @@
     },
     "status": {
       "type": "enumeration",
-      "enum": ["EXPIRED", "AVAILABLE", "CLAIMED"]
+      "enum": [
+        "expired",
+        "available",
+        "claimed"
+      ]
     },
     "type": {
       "type": "enumeration",
-      "enum": ["CASH", "EXPERIENCE"]
+      "enum": [
+        "cash",
+        "experience"
+      ]
     },
     "expiryDate": {
       "type": "date"
     },
-    "cashAmount": {
-      "type": "decimal"
+    "cash": {
+      "type": "component",
+      "repeatable": false,
+      "component": "voucher.cash"
     },
-    "currency": {
-      "type": "enumeration",
-      "enum": ["LKR", "USD"]
+    "experience": {
+      "type": "component",
+      "repeatable": true,
+      "component": "voucher.experience"
     }
   }
 }
