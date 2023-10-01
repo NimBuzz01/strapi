@@ -35,7 +35,7 @@
     "offer": {
       "type": "integer"
     },
-    "requirements": {
+    "additionalInformation": {
       "type": "component",
       "repeatable": true,
       "component": "experience.requirements"
@@ -78,14 +78,15 @@
       "target": "api::voucher-template.voucher-template"
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

@@ -17,11 +17,19 @@
     },
     "status": {
       "type": "enumeration",
-      "enum": ["EXPIRED", "AVAILABLE", "CLAIMED"]
+      "enum": [
+        "EXPIRED",
+        "AVAILABLE",
+        "CLAIMED",
+        "UNPAID"
+      ]
     },
     "type": {
       "type": "enumeration",
-      "enum": ["CASH", "EXPERIENCE"]
+      "enum": [
+        "CASH",
+        "EXPERIENCE"
+      ]
     },
     "expiryDate": {
       "type": "date"
